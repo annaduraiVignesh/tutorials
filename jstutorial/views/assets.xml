@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <template id="assets_backend" name="custom assets" inherit_id="web.assets_backend">
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/jstutorial/static/src/js/animal.js"></script>
+                <script type="text/javascript" src="/jstutorial/static/src/js/dog.js"></script>
+                <script type="text/javascript" src="/jstutorial/static/src/js/hamster.js"></script>
+                <script type="text/javascript" src="/jstutorial/static/src/js/hamster_extend.js"></script>
+                <!--<script type="text/javascript" src="/jstutorial/static/src/js/count.js"></script>-->
+            </xpath>
+        </template>
+        <template id="assets_frontend_extend" name="custom assets" inherit_id="web.assets_frontend">
+            <xpath expr="//link[last()]" position="after">
+                <link rel="stylesheet" type="text/less" href="/jstutorial/static/src/less/jstutorial.login.ui.less"/>
+            </xpath>
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/jstutorial/static/src/js/count.js"></script>
+                <script type="text/javascript" src="/jstutorial/static/src/js/decount.js"></script>
+                <script type="text/javascript" src="/jstutorial/static/src/js/my_widget.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

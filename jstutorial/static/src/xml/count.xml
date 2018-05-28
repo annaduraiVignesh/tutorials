@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <div t-name="CountIncrement">
+        <div class="login_title">
+            <h2>1974 AD</h2>
+            <span class="val"><t t-esc="widget.count"/></span>
+        </div>
+        <button>Increment</button>
+    </div>
+    <div t-name="Decounter">
+        <div class="login_title">
+            <h2>1975 AD</h2>
+            <span class="val"><t t-esc="widget.decount"/></span>
+        </div>
+        <button>Change Band</button>
+    </div>
+</templates>
